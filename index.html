@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Santa CTF</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <script src="script.js"></script>
+    <h1>Secret Santa CTF</h1>
+
+
+    <br>
+    <p>
+    Welcome to the Secret Santa CTF.
+    <p>Enter the flags in the input and click on Submit to complete the challenge.</p>
+    </p>
+
+    <b>
+
+    Best of luck!
+
+    </b>
+    
+
+    <form id="myForm" action="validate.html" method="post" onsubmit="return validateForm()">
+
+        <br>
+        <p>
+            For the First flag, click on this <a href="/Steg.txt"> link </a> 
+        </p>
+
+        <label for="First Flag">First Flag:</label>
+        <input type="text" id="flag01" name="firstflag" required>
+        
+        <br>
+        <br>
+
+        <p>
+            For the second flag, connect to <a href="https://console.cloud.google.com/getting-started">Cloud Console</a> using given credentials, and open the terminal (the icon will be found in the upper right corner of the page).
+            <p>Email: zabilac8798@gmail.com</p>
+            <p>Password: S3cret_S4nta</p> 
+            
+
+Look around for the Second Flag!
+        </p>
+        <label for="Second Flag">Second Flag:</label>
+        <input type="text" id="flag02" name="secondflag" required>
+        
+        <br>
+        <br>
+
+        <label for="Third Flag">Third Flag:</label>
+        <input type="text" id="flag03" name="thirdflag" required>
+
+        <br>
+        <br>
+        
+        <span id="codeError" class="error"></span>
+
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
